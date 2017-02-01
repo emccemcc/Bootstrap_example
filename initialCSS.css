@@ -1,0 +1,34 @@
+.container{
+  min-width:30%;
+  padding: 0 15px;
+}
+.navigation{
+  position:fixed;
+
+}
+
+.row{
+  border:solid;
+
+}
+
+.firstRow{
+  background-color:red;
+}
+
+.secondRow{
+
+
+}
+
+/*eric test for subdividing */
+
+.firstRowColumn1{
+  border:solid;
+}
+
+
+
+/* min length */
+/* is popular */
+/*nav is iffy, maybe go back to the normal one reqs */
