@@ -1,33 +1,28 @@
-.container{
-  min-width:30%;
-  padding: 0 15px;
-}
-.navigation{
-  position:fixed;
+.navbar-fixed-side{
 
+  length:100%;
+  margin:0;
 }
 
-.row{
-  border:solid;
-
+.navbar-fixed-side:hover{
+  outline: dotted red;
 }
+
 
 .firstRow{
   background-color:red;
 }
 
-.secondRow{
-
-
+.btn:checked {
+  /* can't get this working, thinking j-query needed*/
 }
 
 /*eric test for subdividing */
 
-.firstRowColumn1{
-  border:solid;
+
+.rowImage {
+float:left;
 }
-
-
 
 /* min length */
 /* is popular */

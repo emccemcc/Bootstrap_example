@@ -1,50 +1,90 @@
 <html>
 <header>
 <link rel="stylesheet" type:"text/css" href="css/bootstrap.css">
- <link rel="stylesheet" type = "text/css" href="css/styles.css">
+<link rel="stylesheet" type = "text/css" href="css/styles.css">
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/navbar-fixed-side.css" rel="stylesheet" />
+ <!-- my style sheet -->
  <link rel="stylesheet" type="text/css" href="initialCSS.css">
-
+ <!-- testing jQUery -->
+ <script type="text/javascript" href="js/bootstrap.css"></script>
+<script type="text/javascript" href="js/bootstrap.min.css"></script>
+<script type="text/javascript" href="js/bootstrap.npm.css"></script>
+<!-- not working on buttons, will need to ask for clarification -->
 </header>
 
 <body>
   <!-- start of master div -->
+  <div class = "container-fluid">
 <!-- Fixed 1/3 Nav bar -->
-
-
-<div class ="row navRow">
-  <div class="col-xs-2 left">
-    <div class="navigation">Navigation</div>
+<div class="row">
+  <div class="col-sm-3 col-lg-2">
+    <nav class="navbar navbar-default navbar-fixed-side">
+      <p> Navigation </p>
+      <hr>
+      <a href="#"> Blog </a>
+      <hr>
+      <a href="#"> About Me </a>
+    </nav>
   </div>
+
+
+        <div class="col-sm-9 col-lg-10">
+          <div id="content">
+            <h1> Eric's Example </h1>
+            <hr>
+            <h3> Signup to Donate</h3>
+            <div class="input-group input-group-lg">
+              <span class="input-group-addon" id="sizing-addon1">Email</span>
+              <input type="text" class="form-control" placeholder="email@provider.com" aria-describedby="sizing-addon1">
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">$</span>
+              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+              <span class="input-group-addon">Donation Amount</span>
+            </div>
+
+
+                <!-- Recurring payment -->
+                <div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-primary">
+    <input type="radio" name="options" id="option1" autocomplete="off"> One Time Donation
+  </label>
+  <label class="btn btn-primary">
+    <input type="radio" name="options" id="option2" autocomplete="off"> Biyearly
+  </label>
+  <label class="btn btn-primary">
+    <input type="radio" name="options" id="option3" autocomplete="off"> Bimonthly
+  </label>
 </div>
-  <!-- row 1 -->
-  <!-- <div class="col-md-4 left">
-    <p>Home</p>
-  </div> -->
 
-  <div class= "row firstRow">
-    <div class= "col-md-4 firstRowColumn1">
-        <p> <mark> Filler </mark> content</p>
-      </div>
-    <div class= "col-md-4 firstRowColumn1">
-      <p> Filler content</p>
-    </div>
+
+            <div class="input-group">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Submit</button>
+                  </span>
+                </div>
+            <hr>
+            <h1> Fake Blog </h1>
+            <div class= "clearfix">
+              <img class="pull-left" src="http://placehold.it/350x150">
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+deserunt mollit anim id est laborum.
+</p>
 </div>
-        <div class="row secondRow">
-          <div class="col-sm-4">
-            <img src="http://placehold.it/150x150">
-          </div>
-          <div class="col-sm-4">
-            <img src="http://placehold.it/150x150">
-          </div>
-          <div class="col-sm-4">
-            <img src="http://placehold.it/150x150">
-          </div>
-        </div>
 
-
-
-      <div class="row footerRow">
-        <div class="col-lg-12">
+<hr>
           <address>
             Hyperion Ltd. <span class="glyphicon glyphicon-copyright-mark"></span> <br>
             11111 Fake Street <br>
@@ -52,11 +92,12 @@
             <abbr title="Phone">P:</abbr> (111) 222-3333 <br>
             <a href="mailto:#">my.email@gmail.com</a> <br>
           </address>
-
+          <hr>
+        </div>
           <!-- glphy -->
         </div>
-      </div>
 
+</div>
 <!-- end of master div -->
 </div>
 <!-- end of master div -->
